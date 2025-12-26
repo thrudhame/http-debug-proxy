@@ -4,7 +4,12 @@
   "name": "http-debug-proxy",
   "description": "MITM-style proxy to debug HTTP based services",
   "publish": {
-    "exclude": [".env", ".vscode", ".devcontainer"]
+    "exclude": [
+      ".devcontainer",
+      ".github",
+      ".vscode",
+      ".env"
+    ]
   },
   "exports": {
     ".": "./main.ts"
