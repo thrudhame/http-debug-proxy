@@ -1,0 +1,14 @@
+services:
+  http-debug-proxy:
+    env_file: ../.env
+    image: http-debug-proxy:devcontainer
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # environment:
+    #   - PROXY_PORT: ${APP_PROXY_PORT}
+    ports:
+      - "${HOST_PROXY_PORT:-8000}:${APP_PROXY_PORT}"
+    volumes:
+      - ..:/workspace:cached
+    command: sleep infinity

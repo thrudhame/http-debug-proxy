@@ -1,0 +1,14 @@
+// https://containers.dev/guide/dockerfile
+{
+  "name": "http-debug-proxy dev environment",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "http-debug-proxy",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "denoland.vscode-deno"
+      ]
+    }
+  }
+}
